@@ -1,8 +1,15 @@
 
+import React,{useState} from "react";
+import authors from "./data";
+
 function about() {
+  const [author, setAuthor] = useState(authors)
+
     return <div>
-      
-        Hello is this rendering?
+      <ul>
+       <li>{author}</li>
+      </ul>
+       
   </div>;
 }
 

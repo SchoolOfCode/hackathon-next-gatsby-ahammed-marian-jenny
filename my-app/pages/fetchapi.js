@@ -20,6 +20,7 @@ export async function getStaticProps() {
   
   const res = await fetch("https://poetrydb.org/author/poe");
   const posts = await res.json();
+  console.log(posts[0]);
 
 
   // By returning { props: { posts } }, the Blog component
