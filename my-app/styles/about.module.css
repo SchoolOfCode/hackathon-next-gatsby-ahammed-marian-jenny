@@ -10,3 +10,11 @@
   padding-top: 10px;
   font-style:oblique;
 }
+
+.text {
+    margin: 4rem auto;
+    width: 70%;
+    font-weight:500;
+    text-align: center;
+    font-style: oblique;
+}
