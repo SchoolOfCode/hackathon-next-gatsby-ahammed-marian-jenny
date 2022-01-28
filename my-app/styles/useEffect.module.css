@@ -1,0 +1,14 @@
+.form{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+ .form input ,.form button{
+     height:50px;
+     border-radius: 5px;
+     padding-left: 10px;
+     border:  1px solid #eaeaea;;
+ }
+.form button:hover{
+    background-color: #4890e2;
+    color:#fff;
+}

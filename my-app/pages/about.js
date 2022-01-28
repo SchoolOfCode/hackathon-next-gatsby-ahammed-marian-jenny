@@ -1,23 +1,25 @@
-
-import React,{useState} from "react";
+import React, { useState } from "react";
 import authors from "./data";
-import Link from "next/link";
-import styles from "../styles/about.module.css";
 import Navbar from "../src/components/Navbar";
+import style from "../styles/about.module.css";
 
 function about() {
-  const [author, setAuthor] = useState(authors)
+  const [author, setAuthor] = useState(authors);
 
-    return (
+  return (
+    <div>
+      <div className={style.navbar}>
+        <Navbar />
+      </div>
       <div>
-        <Navbar/>
-        <ul>
+        <ul className={style.listItem}>
           {author.map((e, index) => (
-            <li key={index}>{e.name}</li>
+            <li className={style.li} key={index}>{e.name}</li>
           ))}
         </ul>
       </div>
-    );
+    </div>
+  );
 }
 
 export default about;

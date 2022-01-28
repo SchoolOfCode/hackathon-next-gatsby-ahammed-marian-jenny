@@ -19,11 +19,11 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Link href="/about">
-            <a className={styles.card}>About Us</a>
+            <a className={styles.card}>About</a>
           </Link>
 
           <Link href="/fetchapi">
-            <a className={styles.card}>The poems of Edgar Allen Poe</a>
+            <a className={styles.card}>List of Poets</a>
           </Link>
           <Link href="/useEffect">
             <a className={styles.card}>Search by Poet</a>
