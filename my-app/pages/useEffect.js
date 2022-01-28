@@ -8,8 +8,6 @@ export default function StarInput() {
 
     function submitHandler(e) {
         e.preventDefault();
-        console.log(e.target[0].value);
-        console.log(e.target.value);
         setNameInput(e.target[0].value);
     }
     useEffect(() => {
@@ -18,12 +16,19 @@ export default function StarInput() {
         }
         async function getApi() {
             let url = `https://poetrydb.org/author/${nameInput}`;
+
             const response = await fetch(`${url}`);
             const data = await response.json();
-          setPost(data)
+            if (data.status === 404) { console.log("error") }
+            else {
+                setPost(data)
+            }
+          
         }
         getApi()
     }, [nameInput])
+
+  
     return (
         <div>
         <form className='form-submit' onSubmit={submitHandler}>
@@ -32,11 +37,11 @@ export default function StarInput() {
         </form>
         <ul>
         {post.map((e, index)=>{
-            if(index < 10){
-                return <li key={index}> {e.title}</li> 
-            }   
-        }
-        )}
+                if(index < 10){
+                    return <li key={index}> {e.title}</li> 
+                }   
+            }
+            )}
         </ul>
         </div>
     )

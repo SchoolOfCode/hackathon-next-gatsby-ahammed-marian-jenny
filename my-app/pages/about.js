@@ -7,7 +7,9 @@ function about() {
 
     return <div>
       <ul>
-       <li>{author}</li>
+       {author.map((e,index)=>
+       <li key={index}>{e.name}</li>
+       )}
       </ul>
        
   </div>;
