@@ -24,6 +24,9 @@ export default function Home() {
           <Link href="/fetchapi">
             <a className={styles.card}>Look up poems</a>
           </Link>
+          <Link href="/useEffect">
+            <a className={styles.card}>Search for Author poems</a>
+          </Link>
 
          
         </div>
