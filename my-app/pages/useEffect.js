@@ -1,5 +1,6 @@
 
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
+import Navbar from "../src/components/Navbar";
 
 export default function StarInput() {
     const [nameInput, setNameInput] = useState(false);
@@ -31,6 +32,7 @@ export default function StarInput() {
   
     return (
         <div>
+            <Navbar/>
         <form className='form-submit' onSubmit={submitHandler}>
             <input placeholder="Author"/>
             <button>Search for Title</button>

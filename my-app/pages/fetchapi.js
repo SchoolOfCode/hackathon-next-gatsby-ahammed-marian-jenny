@@ -1,14 +1,16 @@
-
+import Navbar from "../src/components/Navbar";
 
 function fetchapi({ posts }) {
  
-  return (
+    return (
+        <div>
+            <Navbar />
     <ul>
       {posts.map((post, index) => (
           <li key={index}>{post.title}</li>
       ))}
     </ul>
-  );
+ </div> );
 }
 
 

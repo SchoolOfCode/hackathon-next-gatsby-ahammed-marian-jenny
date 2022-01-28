@@ -12,6 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        
         <h1 className={styles.title}>Welcome to our Poetry Finder</h1>
 
         <p className={styles.description}></p>
@@ -22,10 +23,10 @@ export default function Home() {
           </Link>
 
           <Link href="/fetchapi">
-            <a className={styles.card}>Look up poems</a>
+            <a className={styles.card}>The poems of Edgar Allen Poe</a>
           </Link>
           <Link href="/useEffect">
-            <a className={styles.card}>Search for Author poems</a>
+            <a className={styles.card}>Search by Poet</a>
           </Link>
 
          
