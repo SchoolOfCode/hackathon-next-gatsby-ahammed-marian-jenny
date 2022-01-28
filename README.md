@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6835304&assignment_repo_type=AssignmentRepo)
 # Gatsby / Next Research Hackathon
 
 So far we have mainly use `create-react-app` to help us build react apps. `create-react-app` sets out some boiler plate code and give us a development server, and the rest is up to us. Both Gatsby and Next do more behind the scenes to help you make the best application you can, but they are subtly different. Gatsby is a "static site generator", while next does "server-side rendering". What do these mean? That's what you are going to find out.
